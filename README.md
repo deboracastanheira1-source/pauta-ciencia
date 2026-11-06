@@ -31,15 +31,20 @@ Também é possível executar o build local e enviar o conteúdo de `dist` pela 
 
 Crie um arquivo JSON em `src/content/`, copiando o formato de `prevencao-sifilis.json`. Todos são carregados automaticamente no build. Use slug único (minúsculas e hífens), título, resumo, área, DOI, URL original e caminho de imagem em `public/`. `date` aceita `YYYY-MM-DD` ou `null` (mostra “Data em revisão”). `featured: true` exibe a pauta na página inicial. `review` contém os campos de revisão editorial. Faça novo build após editar conteúdo. As pautas com status de revisão ficam visíveis e claramente identificadas; não coloque notas confidenciais nos arquivos.
 
-## Primeira pauta e revisão
+## Matéria sobre sífilis congênita
 
-O título e o DOI foram fornecidos pelo solicitante. O DOI não pôde ser verificado durante a criação. Não foram incluídos métodos, números, resultados ou conclusões do artigo. O resumo descreve apenas o tema do título e é provisório. Data e metadados devem ser conferidos, e o resumo deve passar por revisão antes da divulgação final. A ilustração SVG é abstrata e não representa dados científicos. O link à publicação utiliza https://doi.org/10.1186/s12879-026-14637-0.
+O texto aprovado é mantido integralmente em src/content/articles/sifilis-congenita-prevencao-brasil.md. Os metadados, os indicadores em destaque e a associação com a capa ficam em src/content/prevencao-sifilis.json. A URL é /noticias/sifilis-congenita-prevencao-brasil; a URL anterior continua reconhecida pelo React.
+
+A ilustração original e a versão PNG têm crédito e licença CC BY 4.0 em public/LICENCA-ILUSTRACAO.md. A imagem é ilustrativa e não representa resultados do estudo.
+
+O comando npm run build gera, além da SPA, um HTML específico para a matéria com texto completo e metadados SEO/Open Graph, disponível sem execução de JavaScript. O domínio padrão dos metadados é https://pautaciencia.com.br. Se o domínio público for outro, configure VITE_SITE_URL no ambiente de build (valor público, sem credenciais). Não há alteração de DNS ou e-mail.
 
 ## Páginas
 
 - `/`: chamada, destaque e apresentação
 - `/noticias`: listagem e busca por título, área e DOI
 - `/noticias/:slug`: pauta e referência original
+- `/videos`: vídeos associados aos artigos
 - `/sobre`: propósito e princípios editoriais
 - `/contato`: link de e-mail para imprensa@pautaciencia.com.br
 

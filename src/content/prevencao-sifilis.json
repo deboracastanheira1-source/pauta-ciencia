@@ -1,15 +1,30 @@
 {
-  "slug": "prevencao-sifilis-congenita-brasil",
-  "title": "Congenital syphilis prevention cascade in Brazil, 2015–2023: a national analysis of regional and sociodemographic inequalities",
-  "summary": "Resumo provisório: o título fornecido aborda a cascata de prevenção da sífilis congênita no Brasil entre 2015 e 2023, com foco em desigualdades regionais e sociodemográficas. Métodos, resultados e conclusões serão apresentados após leitura e revisão editorial da publicação original.",
-  "image": "/editorial-saude.svg",
+  "slug": "sifilis-congenita-prevencao-brasil",
+  "title": "Quase todas as gestantes fazem pré-natal no Brasil, mas falhas no tratamento dificultam a prevenção da sífilis congênita",
+  "summary": "Estudo nacional com dados de 2015 a 2023 mostra que, apesar da ampla cobertura do pré-natal, menos da metade das gestantes notificadas com sífilis apresentou tratamento potencialmente correto. Desigualdades sociais e regionais agravam o problema.",
+  "image": "/editorial-saude.png",
   "imageAlt": "Ilustração editorial abstrata de conexões e cuidado em saúde, sem representação de dados do estudo",
-  "imageCredit": "Ilustração editorial Pauta Ciência; não representa resultados do estudo.",
+  "imageCredit": "Ilustração editorial Pauta Ciência, licenciada sob CC BY 4.0. Não representa dados do estudo.",
   "date": null,
-  "area": "Saúde pública",
+  "area": "Saúde Pública",
   "doi": "10.1186/s12879-026-14637-0",
   "originalUrl": "https://doi.org/10.1186/s12879-026-14637-0",
   "featured": true,
-  "editorialStatus": "Em revisão editorial",
-  "review": {"summary": "Pendente de leitura do texto integral", "date": "Confirmar data de publicação", "image": "Validar imagem e crédito", "metadata": "Conferir título, autoria, periódico e DOI"}
+  "editorialStatus": "Matéria aprovada",
+  "aliases": [
+    "prevencao-sifilis-congenita-brasil"
+  ],
+  "subtitle": "Estudo nacional com dados de 2015 a 2023 mostra que, apesar da ampla cobertura do pré-natal, menos da metade das gestantes notificadas com sífilis apresentou tratamento potencialmente correto. Desigualdades sociais e regionais agravam o problema.",
+  "contentFile": "sifilis-congenita-prevencao-brasil.md",
+  "imageLicense": "https://creativecommons.org/licenses/by/4.0/",
+  "indicators": [
+    {
+      "value": "98,2%",
+      "meaning": "das gestantes realizaram pelo menos uma consulta de pré-natal."
+    },
+    {
+      "value": "48,6%",
+      "meaning": "das gestantes com sífilis notificada preencheram os critérios utilizados no estudo para tratamento potencialmente correto."
+    }
+  ]
 }
