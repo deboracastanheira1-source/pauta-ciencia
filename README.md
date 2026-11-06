@@ -25,7 +25,7 @@ Envie este projeto para um repositório Git. No Cloudflare, abra Workers & Pages
 - Versão Node: 22 (arquivo `.node-version` incluído)
 - Diretório raiz: a pasta que contém este package.json
 
-Também é possível executar o build local e enviar o conteúdo de `dist` pela opção de upload de assets do Pages. O arquivo `public/_redirects`, copiado ao build, permite abrir diretamente URLs como `/sobre` e `/noticias/prevencao-sifilis-congenita-brasil`. Não requer variáveis secretas, Functions ou banco de dados. A publicação não foi realizada nesta entrega.
+Também é possível executar o build local e enviar o conteúdo de `dist` pela opção de upload de assets do Pages. No Pages, o fallback SPA padrão atende às URLs internas quando não há um arquivo 404.html no diretório de saída. Não requer variáveis secretas, Functions ou banco de dados. A publicação não foi realizada nesta entrega.
 
 ## Adicionar notícias
 
@@ -56,3 +56,11 @@ A página /videos recebe vídeos de arquivos JSON em src/content/videos/. Ela co
 5. Após revisão editorial, defina published como true e execute novo build. Apenas vídeos publicados e ligados a um artigo existente aparecem.
 
 O player possui controles nativos, sem reprodução automática, e há transcrição expansível. A página do artigo oferece link para os vídeos quando houver conteúdo associado. Arquivos grandes podem ser hospedados em um serviço de mídia com URL direta, respeitando os limites do provedor de hospedagem. Nenhum upload pelo navegador ou backend foi adicionado.
+
+## Cloudflare Workers Static Assets
+
+Para o deploy em Workers, use o arquivo wrangler.json da raiz, com assets.directory apontando para ./dist e assets.not_found_handling definido como single-page-application. Execute npm run build antes de npx wrangler deploy. No build conectado ao Git, use npm run build como comando de build e npx wrangler deploy como comando de deploy.
+
+O fallback serve index.html internamente para as páginas React, incluindo /noticias, /videos, /sobre, /contato e /noticias/:slug, preservando a URL. Não recrie a regra /* /index.html 200 em public/_redirects: ela pode produzir o erro 100324 com a normalização de HTML dos Static Assets.
+
+A configuração não declara rotas de domínio, zonas DNS ou configurações de e-mail. O build Vite limpa dist antes de gerar os arquivos, removendo também o antigo _redirects.
