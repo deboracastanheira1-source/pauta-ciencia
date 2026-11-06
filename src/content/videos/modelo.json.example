@@ -1,0 +1,12 @@
+{
+  "slug": "video-sobre-a-pesquisa",
+  "published": false,
+  "title": "Título do vídeo",
+  "description": "Descrição revisada do conteúdo.",
+  "articleSlug": "prevencao-sifilis-congenita-brasil",
+  "src": "/videos/nome-do-video.mp4",
+  "type": "video/mp4",
+  "poster": "/editorial-saude.svg",
+  "captions": "/videos/nome-do-video.vtt",
+  "transcript": "Transcrição integral revisada do vídeo."
+}

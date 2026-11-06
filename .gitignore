@@ -1,0 +1,15 @@
+node_modules/
+dist/
+.vite/
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+.npmrc
+credentials*
+secrets*
+*.log
+.DS_Store
+Thumbs.db

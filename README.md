@@ -1,0 +1,58 @@
+# Pauta Ciência
+
+Portal estático em React, Vite e CSS responsivo. Sem login, backend ou formulário. Fontes Google são opcionais: há fontes locais de fallback.
+
+## Executar
+
+Instale Node.js 22 ou superior, com npm. Na pasta do projeto:
+
+```sh
+npm install
+npm run dev
+npm run build
+npm run preview
+```
+
+O build é gerado em `dist`.
+
+## Cloudflare Pages — plano gratuito
+
+Envie este projeto para um repositório Git. No Cloudflare, abra Workers & Pages, crie um projeto Pages e conecte o repositório. Use:
+
+- Preset: Vite (ou None)
+- Comando de build: `npm run build`
+- Diretório de saída: `dist`
+- Versão Node: 22 (arquivo `.node-version` incluído)
+- Diretório raiz: a pasta que contém este package.json
+
+Também é possível executar o build local e enviar o conteúdo de `dist` pela opção de upload de assets do Pages. O arquivo `public/_redirects`, copiado ao build, permite abrir diretamente URLs como `/sobre` e `/noticias/prevencao-sifilis-congenita-brasil`. Não requer variáveis secretas, Functions ou banco de dados. A publicação não foi realizada nesta entrega.
+
+## Adicionar notícias
+
+Crie um arquivo JSON em `src/content/`, copiando o formato de `prevencao-sifilis.json`. Todos são carregados automaticamente no build. Use slug único (minúsculas e hífens), título, resumo, área, DOI, URL original e caminho de imagem em `public/`. `date` aceita `YYYY-MM-DD` ou `null` (mostra “Data em revisão”). `featured: true` exibe a pauta na página inicial. `review` contém os campos de revisão editorial. Faça novo build após editar conteúdo. As pautas com status de revisão ficam visíveis e claramente identificadas; não coloque notas confidenciais nos arquivos.
+
+## Primeira pauta e revisão
+
+O título e o DOI foram fornecidos pelo solicitante. O DOI não pôde ser verificado durante a criação. Não foram incluídos métodos, números, resultados ou conclusões do artigo. O resumo descreve apenas o tema do título e é provisório. Data e metadados devem ser conferidos, e o resumo deve passar por revisão antes da divulgação final. A ilustração SVG é abstrata e não representa dados científicos. O link à publicação utiliza https://doi.org/10.1186/s12879-026-14637-0.
+
+## Páginas
+
+- `/`: chamada, destaque e apresentação
+- `/noticias`: listagem e busca por título, área e DOI
+- `/noticias/:slug`: pauta e referência original
+- `/sobre`: propósito e princípios editoriais
+- `/contato`: link de e-mail para imprensa@pautaciencia.com.br
+
+Navegação responsiva, link para pular ao conteúdo, indicação de página ativa e foco visível. Nenhuma coleta de dados ou armazenamento local.
+
+## Vídeos curtos
+
+A página /videos recebe vídeos de arquivos JSON em src/content/videos/. Ela começa vazia, sem vídeos ou resultados científicos fictícios.
+
+1. Copie modelo.json.example para um arquivo com extensão .json nessa pasta.
+2. Coloque o vídeo MP4 em public/videos/ e informe seu caminho em src. Também aceita URL HTTPS direta de um arquivo de vídeo, sem iframe.
+3. Preencha título, descrição, transcrição integral, imagem de capa e articleSlug com o slug exato de uma notícia existente.
+4. Forneça legendas WebVTT em public/videos/ e preencha captions; remova esse campo se não houver arquivo.
+5. Após revisão editorial, defina published como true e execute novo build. Apenas vídeos publicados e ligados a um artigo existente aparecem.
+
+O player possui controles nativos, sem reprodução automática, e há transcrição expansível. A página do artigo oferece link para os vídeos quando houver conteúdo associado. Arquivos grandes podem ser hospedados em um serviço de mídia com URL direta, respeitando os limites do provedor de hospedagem. Nenhum upload pelo navegador ou backend foi adicionado.
