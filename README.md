@@ -35,7 +35,7 @@ Crie um arquivo JSON em `src/content/`, copiando o formato de `prevencao-sifilis
 
 O texto aprovado é mantido integralmente em src/content/articles/sifilis-congenita-prevencao-brasil.md. Os metadados, os indicadores em destaque e a associação com a capa ficam em src/content/prevencao-sifilis.json. A URL é /noticias/sifilis-congenita-prevencao-brasil; a URL anterior continua reconhecida pelo React.
 
-A ilustração original e a versão PNG têm crédito e licença CC BY 4.0 em public/LICENCA-ILUSTRACAO.md. A imagem é ilustrativa e não representa resultados do estudo.
+A capa da matéria é a fotografia enviada pela responsável pelo projeto, com a legenda “Imagem meramente ilustrativa.”. Ela não está abrangida pela licença CC BY 4.0 das ilustrações originais, que continuam documentadas em public/LICENCA-ILUSTRACAO.md.
 
 O comando npm run build gera, além da SPA, um HTML específico para a matéria com texto completo e metadados SEO/Open Graph, disponível sem execução de JavaScript. O domínio padrão dos metadados é https://pautaciencia.com.br. Se o domínio público for outro, configure VITE_SITE_URL no ambiente de build (valor público, sem credenciais). Não há alteração de DNS ou e-mail.
 

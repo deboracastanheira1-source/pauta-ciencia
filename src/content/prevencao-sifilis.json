@@ -2,9 +2,9 @@
   "slug": "sifilis-congenita-prevencao-brasil",
   "title": "Quase todas as gestantes fazem pré-natal no Brasil, mas falhas no tratamento dificultam a prevenção da sífilis congênita",
   "summary": "Estudo nacional com dados de 2015 a 2023 mostra que, apesar da ampla cobertura do pré-natal, menos da metade das gestantes notificadas com sífilis apresentou tratamento potencialmente correto. Desigualdades sociais e regionais agravam o problema.",
-  "image": "/editorial-saude.png",
-  "imageAlt": "Ilustração editorial abstrata de conexões e cuidado em saúde, sem representação de dados do estudo",
-  "imageCredit": "Ilustração editorial Pauta Ciência, licenciada sob CC BY 4.0. Não representa dados do estudo.",
+  "image": "/pre-natal-ilustrativa.jpg",
+  "imageAlt": "Imagem meramente ilustrativa de uma gestante durante atendimento de pré-natal.",
+  "imageCredit": "Imagem meramente ilustrativa.",
   "date": null,
   "area": "Saúde Pública",
   "doi": "10.1186/s12879-026-14637-0",
@@ -16,7 +16,6 @@
   ],
   "subtitle": "Estudo nacional com dados de 2015 a 2023 mostra que, apesar da ampla cobertura do pré-natal, menos da metade das gestantes notificadas com sífilis apresentou tratamento potencialmente correto. Desigualdades sociais e regionais agravam o problema.",
   "contentFile": "sifilis-congenita-prevencao-brasil.md",
-  "imageLicense": "https://creativecommons.org/licenses/by/4.0/",
   "indicators": [
     {
       "value": "98,2%",
@@ -26,5 +25,6 @@
       "value": "48,6%",
       "meaning": "das gestantes com sífilis notificada preencheram os critérios utilizados no estudo para tratamento potencialmente correto."
     }
-  ]
+  ],
+  "imageType": "image/jpeg"
 }
