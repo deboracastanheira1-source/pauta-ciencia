@@ -1,0 +1,34 @@
+{
+  "slug": "desigualdades-raciais-prep-hiv-brasil",
+  "title": "Estudo da Fiocruz revela desigualdades raciais na adesão à PrEP e na incidência de HIV no Brasil",
+  "subtitle": "Pesquisa com quase 4 mil participantes do ImPrEP mostra maior frequência de não adesão à prevenção oral entre pessoas pretas e pardas e reforça a necessidade de estratégias de cuidado mais equitativas.",
+  "summary": "Pesquisa com quase 4 mil participantes do ImPrEP mostra maior frequência de não adesão à prevenção oral entre pessoas pretas e pardas e reforça a necessidade de estratégias de cuidado mais equitativas.",
+  "area": "HIV e ISTs",
+  "date": "2026-11-09",
+  "canonicalUrl": "https://pautaciencia.com.br/noticias/desigualdades-raciais-prep-hiv-brasil",
+  "image": "/images/capa_prep_imprep.png",
+  "imageType": "image/png",
+  "imageAlt": "Ilustração gerada por inteligência artificial de uma conversa em serviço de saúde; não representa participantes do ImPrEP.",
+  "imageCredit": "Imagem ilustrativa gerada por inteligência artificial para a Pauta Ciência. Não representa participantes do estudo ImPrEP.",
+  "preserveImage": true,
+  "doi": "10.1016/j.bjid.2026.104614",
+  "originalUrl": "https://doi.org/10.1016/j.bjid.2026.104614",
+  "featured": true,
+  "editorialStatus": "Matéria aprovada",
+  "contentFile": "desigualdades-raciais-prep-hiv-brasil.md",
+  "bodyStartsWith": "A profilaxia pré-exposição",
+  "indicators": [
+    {
+      "value": "26,2%",
+      "meaning": "Pessoas pretas — proporção classificada com não adesão à PrEP no estudo ImPrEP."
+    },
+    {
+      "value": "24,2%",
+      "meaning": "Pessoas pardas — proporção classificada com não adesão à PrEP no estudo ImPrEP."
+    },
+    {
+      "value": "18,7%",
+      "meaning": "Pessoas brancas — proporção classificada com não adesão à PrEP no estudo ImPrEP."
+    }
+  ]
+}
