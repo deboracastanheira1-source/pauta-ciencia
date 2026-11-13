@@ -69,3 +69,7 @@ Para o deploy em Workers, use o arquivo wrangler.json da raiz, com assets.direct
 O fallback serve index.html internamente para as páginas React, incluindo /noticias, /videos, /sobre, /contato e /noticias/:slug, preservando a URL. Não recrie a regra /* /index.html 200 em public/_redirects: ela pode produzir o erro 100324 com a normalização de HTML dos Static Assets.
 
 A configuração não declara rotas de domínio, zonas DNS ou configurações de e-mail. O build Vite limpa dist antes de gerar os arquivos, removendo também o antigo _redirects.
+
+## Compartilhamento de vídeos
+
+Cada vídeo publicado recebe uma âncora /videos#slug e ações para compartilhar o link no Facebook e WhatsApp, copiar o link e abrir as opções nativas do aparelho para o Instagram. A presença do Instagram nas opções depende do sistema, navegador e aplicativos instalados. O site não publica automaticamente em contas sociais. O link de download permite salvar o vídeo para publicação manual; arquivos externos podem abrir em outra aba conforme a política do provedor. Não exige backend, tokens ou login no portal. A transcrição só aparece quando preenchida no arquivo de conteúdo.
